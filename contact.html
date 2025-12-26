@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =====================
+       META
+  ====================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMM — Contact Us</title>
+
+  <!-- =====================
+       STYLES & SCRIPTS
+  ====================== -->
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/app.js" defer></script>
+</head>
+
+<body>
+
+<!-- =====================
+     HEADER
+====================== -->
+<header class="site-header">
+  <div class="header-left">
+    <img src="images/emm.png" alt="EMM Logo" class="logo" />
+  </div>
+
+  <nav class="main-nav">
+    <a href="index.html">Shop</a>
+    <a href="contact.html" class="active">About</a>
+    <a href="profile.html">Profile</a>
+    <a href="cart.html" class="cart-link">
+      Cart
+      <span id="cart-count" class="cart-count">0</span>
+    </a>
+  </nav>
+</header>
+
+<!-- =====================
+     MAIN CONTENT
+====================== -->
+<main class="container">
+
+  <!-- ===== PAGE TITLE ===== -->
+  <section class="shop-header">
+    <h2>Contact & About</h2>
+  </section>
+
+  <!-- =====================
+       ABOUT SECTION
+  ====================== -->
+  <section class="about-section">
+    <h3>What is EMM?</h3>
+    <p>
+      EMM is a modern digital marketplace focused on premium accessories and
+      curated collections. We collaborate with independent brands and creators
+      to deliver high-quality products with a clean, minimal experience.
+    </p>
+
+    <p>
+      Our mission is simple: quality products, transparent pricing, and a
+      smooth shopping experience.
+    </p>
+  </section>
+
+  <!-- =====================
+       CONTACT INFO
+  ====================== -->
+  <section class="contact-info">
+    <div class="info-card">
+      <h4>Email</h4>
+      <p>support@emm.com</p>
+    </div>
+
+    <div class="info-card">
+      <h4>Instagram</h4>
+      <p>@emm_store</p>
+    </div>
+
+    <div class="info-card">
+      <h4>WhatsApp</h4>
+      <p>+216 00 000 000</p>
+    </div>
+  </section>
+
+  <!-- =====================
+       CONTACT FORM
+  ====================== -->
+  <section class="contact-form-section">
+    <h3>Send us a message</h3>
+
+    <form class="contact-form" onsubmit="event.preventDefault(); notify('Message sent'); this.reset();">
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input
+          id="name"
+          type="text"
+          placeholder="Your name"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          placeholder="your@email.com"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          rows="5"
+          placeholder="Write your message here..."
+          required
+        ></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">
+        Send Message
+      </button>
+
+    </form>
+  </section>
+
+</main>
+
+<!-- =====================
+     FOOTER
+====================== -->
+<footer class="site-footer">
+  <div class="footer-grid">
+
+    <div>
+      <h4>Product</h4>
+      <p>Accessories</p>
+      <p>Jewelry</p>
+      <p>Collections</p>
+    </div>
+
+    <div>
+      <h4>Company</h4>
+      <p>About EMM</p>
+      <p>Careers</p>
+      <p>Partners</p>
+    </div>
+
+    <div>
+      <h4>Support</h4>
+      <p>Contact</p>
+      <p>Shipping</p>
+      <p>Returns</p>
+    </div>
+
+    <div>
+      <h4>Social</h4>
+      <p>Instagram</p>
+      <p>Facebook</p>
+      <p>WhatsApp</p>
+    </div>
+
+  </div>
+
+  <p class="copyright">
+    © 2025 EMM. All rights reserved.
+  </p>
+</footer>
+
+</body>
+</html>

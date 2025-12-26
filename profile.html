@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =====================
+       META
+  ====================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMM — Profile</title>
+
+  <!-- =====================
+       STYLES & SCRIPTS
+  ====================== -->
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/app.js" defer></script>
+</head>
+
+<body>
+
+<!-- =====================
+     HEADER
+====================== -->
+<header class="site-header">
+  <div class="header-left">
+    <img src="images/emm.png" alt="EMM Logo" class="logo" />
+  </div>
+
+  <nav class="main-nav">
+    <a href="index.html">Shop</a>
+    <a href="contact.html">About</a>
+    <a href="profile.html" class="active">Profile</a>
+    <a href="cart.html" class="cart-link">
+      Cart
+      <span id="cart-count" class="cart-count">0</span>
+    </a>
+  </nav>
+</header>
+
+<!-- =====================
+     MAIN CONTENT
+====================== -->
+<main class="container">
+
+  <!-- ===== PAGE HEADER ===== -->
+  <section class="shop-header">
+    <h2>Your Profile</h2>
+  </section>
+
+  <!-- =====================
+       PROFILE OVERVIEW
+  ====================== -->
+  <section class="profile-overview">
+
+    <div class="profile-card">
+      <div class="profile-avatar-container">
+        <img
+          src="images/profile-placeholder.png"
+          alt="Profile picture"
+          class="profile-avatar"
+          id="profile-avatar"
+        />
+        <label for="avatar-upload" class="avatar-upload-label" title="Upload profile picture">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+            <circle cx="12" cy="13" r="4"></circle>
+          </svg>
+        </label>
+        <input
+          type="file"
+          id="avatar-upload"
+          accept="image/*"
+          style="display: none;"
+        />
+      </div>
+
+      <h3 class="profile-name">Guest User</h3>
+      <p class="profile-email">Not logged in</p>
+
+      <button class="profile-action-btn">
+        Sign In / Register
+      </button>
+    </div>
+
+    <!-- =====================
+         ACCOUNT INFO
+    ====================== -->
+    <div class="profile-info">
+
+      <div class="info-block">
+        <h4>Account Status</h4>
+        <p>Guest</p>
+      </div>
+
+      <div class="info-block">
+        <h4>Orders</h4>
+        <p>No orders yet</p>
+      </div>
+
+      <div class="info-block">
+        <h4>Saved Items</h4>
+        <p>0 items</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =====================
+       FUTURE FEATURES
+  ====================== -->
+  <section class="profile-features">
+    <h3>Coming Soon</h3>
+
+    <ul>
+      <li>✔ Order history</li>
+      <li>✔ Saved addresses</li>
+      <li>✔ Payment methods</li>
+      <li>✔ Account settings</li>
+    </ul>
+  </section>
+
+</main>
+
+<!-- =====================
+     FOOTER
+====================== -->
+<footer class="site-footer">
+  <div class="footer-grid">
+
+    <div>
+      <h4>Product</h4>
+      <p>Accessories</p>
+      <p>Jewelry</p>
+      <p>Collections</p>
+    </div>
+
+    <div>
+      <h4>Company</h4>
+      <p>About EMM</p>
+      <p>Careers</p>
+      <p>Partners</p>
+    </div>
+
+    <div>
+      <h4>Support</h4>
+      <p>Contact</p>
+      <p>Shipping</p>
+      <p>Returns</p>
+    </div>
+
+    <div>
+      <h4>Social</h4>
+      <p>Instagram</p>
+      <p>Facebook</p>
+      <p>WhatsApp</p>
+    </div>
+
+  </div>
+
+  <p class="copyright">
+    © 2025 EMM. All rights reserved.
+  </p>
+</footer>
+
+</body>
+</html>

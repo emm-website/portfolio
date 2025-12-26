@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMM — Admin</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="header-left">
+    <span class="brand-name">EMM Admin</span>
+  </div>
+
+  <nav class="main-nav">
+    <a href="index.html">Shop</a>
+    <a href="profile.html">Profile</a>
+    <a href="#" onclick="logout()">Logout</a>
+  </nav>
+</header>
+
+<main class="container">
+
+  <section class="shop-header">
+    <h2>Admin Dashboard</h2>
+  </section>
+
+  <!-- ================= PRODUCTS ================= -->
+  <section>
+    <h3>Products</h3>
+
+    <div class="admin-form">
+      <input id="new-name" placeholder="Product name">
+      <input id="new-price" type="number" placeholder="Price">
+      <input id="new-image" placeholder="Image path (images/...)">
+      <button onclick="addProduct()">Add Product</button>
+    </div>
+
+    <div id="admin-products"></div>
+  </section>
+
+  <!-- ================= ORDERS ================= -->
+  <section style="margin-top:40px;">
+    <h3>Orders</h3>
+    <div id="admin-orders"></div>
+  </section>
+
+</main>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    if (!isAdmin()) {
+      alert("Access denied")
+      location.href = "index.html"
+    } else {
+      renderAdminProducts()
+      renderAdminOrders()
+    }
+  })
+</script>
+
+
+</body>
+</html>
